@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    android:background="@drawable/bgs"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Prediksi Cuaca Berbagai Negara"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih Salah Satu Negara"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/sp_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:entries="@array/daftar_negara"
+        android:spinnerMode="dialog" />
+
+    <Button
+        android:id="@+id/btn_one_time_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#C51162"
+        android:fontFamily="@font/autour_one"
+        android:text="Silahkan Atur Satu Waktu Saja" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_periodic_task"
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#1DAC62"
+            android:fontFamily="@font/autour_one"
+            android:text="Atur Waktu Periodic" />
+
+        <Button
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/btn_cancel_periodic_task"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#54C0D1"
+            android:enabled="true"
+            android:text="Batalkan Waktu Periodic"
+            android:textSize="10sp"
+            app:iconTint="#ECDFDF" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#D50000"
+        android:backgroundTint="#E13535"
+        android:text="Status : "
+        android:textSize="16sp" />
+
+
+</LinearLayout>

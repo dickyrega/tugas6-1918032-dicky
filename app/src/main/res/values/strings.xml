@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">tugas6prak</string>
+    <string-array name="daftar_negara">
+        <item>Indonesia</item>
+        <item>Amerika</item>
+        <item>Belanda</item>
+        <item>Saudi Arabia</item>
+        <item>Afrika Selatan</item>
+        <item>Jepang</item>
+    </string-array>>
+
+</resources>
